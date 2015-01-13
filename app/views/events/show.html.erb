@@ -2,7 +2,7 @@
 
 <p>
   <strong>Title:</strong>
-  <%= @event.title %>
+  <%= @event.public_title %>
 </p>
 
 <p>
@@ -16,23 +16,23 @@
 </p>
 
 <p>
-  <strong>Date:</strong>
-  <%= @event.date %>
+  <strong>Public Date:</strong>
+  <%= @event.public_date %>
 </p>
 
 <p>
-  <strong>Time:</strong>
-  <%= @event.time %>
+  <strong>Public Time:</strong>
+  <%= @event.public_time %>
 </p>
 
 <p>
-  <strong>Location:</strong>
-  <%= @event.location %>
+  <strong>Public Location:</strong>
+  <%= @event.public_location %>
 </p>
 
 <p>
-  <strong>Price:</strong>
-  <%= @event.price %>
+  <strong>Public Price:</strong>
+  <%= @event.public_price %>
 </p>
 
 <p>
@@ -41,8 +41,8 @@
 </p>
 
 <p>
-  <strong>Event picture url:</strong>
-  <%= @event.event_picture_url %>
+  <strong>Public Picture url:</strong>
+  <%= @event.public_picture %>
 </p>
 
 <p>
@@ -56,9 +56,9 @@
 </p>
 
 <p>
-  <strong>Publico:</strong>
-  <%= @event.publico %>
+  <strong>Is Public:</strong>
+  <%= @event.is_public %>
 </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
+<!-- <= link_to 'Edit', edit_event_path(@event) %> | -->
 <%= link_to 'Back', events_path %>

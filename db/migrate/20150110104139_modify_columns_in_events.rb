@@ -3,7 +3,7 @@ class ModifyColumnsInEvents < ActiveRecord::Migration
         change_table :events do |t|
         t.rename :title, :public_title
         t.rename :location, :public_location
-        t.rename :publico, :is_public?
+        t.rename :publico, :is_public
         t.change :date, :string
         t.rename :date, :public_date
         t.rename :time, :public_time

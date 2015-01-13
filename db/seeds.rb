@@ -12,7 +12,7 @@ User.create(firstname:"Sarah", lastname:"Kavrell", email:"sarahk@generalassemb.l
 
                       # Private Event
 Event.create(
-  is_public?: false,
+  is_public: false,
   public_title: "GA photo shoot",
   private_title: "GA photo shoot",
   public_description: "This event is only for WEB DEVELOPMENT IMMERSIVE students. We'll have a professional photographer in to take headshots of you all for your Meet and Hire books and for whatever other purposes you'd like to use it for.",
@@ -36,7 +36,7 @@ Event.create(
 
                       # Public Event
 Event.create(
-  is_public?: true,
+  is_public: true,
   public_title: "GA graduation party",
   public_description: "We are going to celebrate our graduation from the GA WDI program",
   public_date: "Dic 19ht 2014",

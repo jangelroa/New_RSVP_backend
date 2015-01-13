@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 20150110104139) do
     t.string   "public_picture"
     t.string   "public_code"
     t.string   "private_code"
-    t.boolean  "is_public?"
+    t.boolean  "is_public"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
