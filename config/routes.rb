@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   post 'users/attending_event'
   post 'users/rsvp'
 
+  root 'users/index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
