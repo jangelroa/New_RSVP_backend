@@ -1,6 +1,36 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
+  def attending_event
+    @user = User.find(params[:user_id])
+    @event = Event.find(params[:event_id])
+    if @user.attending_events.include? @event
+
+      render json: { attending: true }
+
+    else
+
+      render json: { attending: false }
+
+    end
+  end
+
+  def rsvp
+    @user = User.find(params[:user_id])
+    @event = Event.find(params[:event_id])
+    if @user.attending_events.include? @event
+
+      @user.attending_events.delete(@event)
+      render json: { delete: true }
+
+    else
+
+      @user.attending_events << @event
+      render json: { created: true }
+
+    end
+  end
+
   def login
 
 # logger.info("AAAAAAAAAAAAAAAAAAAAA")

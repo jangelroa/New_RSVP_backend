@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     resources :events, except: [:new, :edit]
   # end
   post 'users/login'
+  post 'users/attending_event'
+  post 'users/rsvp'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
